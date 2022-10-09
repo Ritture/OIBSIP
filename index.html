@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=sec, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Burgur King || landing page</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="logo-removebg-preview.png" alt="image" class="logo"></a>
+            <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Offers</a></li>
+                    <li><a href="#">Restaurants</a></li>
+                    <li><a href="#">Rewards</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="text">
+                <h2>
+                    <span> S</span>ometimes you’ve got to break the rules, <br>You’re the Boss, <span> "Burger King"</span>
+                    <br>
+                    <br>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Nisi veritatis nesciunt earum veniam excepturi assumenda enim blanditiis necessitatibus officiis. 
+                        Culpa laborum exercitationem aliquid nostrum, assumenda deleniti, 
+                        tenetur nemo quam repellendus, magni eligendi modi quos accusamus nam dolores fuga? 
+                        </p>
+                        <a href="#">Read</a>
+                </h2>
+            </div>
+            <div class="imgbox">
+                <img src="b1.png" alt="image" class="burgur">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb1.png" alt="img" onclick="imgSlider('b1.png');changeColor('')"></li>
+            <li><img src="thumb4.png" alt="img" onclick="imgSlider('b4.png');changeColor('#FF8C00')"></li>
+            <li><img src="thumb2.png" alt="img" onclick="imgSlider('b2.png');changeColor('#000')"></li>
+            <li><img src="thumb3.png" alt="img" onclick="imgSlider('b3.png');changeColor('')"></li>
+            
+
+        </ul>
+        <ul class="social">
+            <li><a href="#"><img src="facebook.png" alt="img"></a></li>
+            <li><a href="#"><img src="instagram.png" alt="img"></a></li>
+            <li><a href="#"><img src="twitter.png" alt="img"></a></li>
+        </ul>
+    </section>
+<footer>
+    <a href="#">created by  Ritesh Mishra | all rights reserved</a>
+</footer>
+<script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.burgur').src =anything;}
+        function changeColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+</script>
+</body>
+</html>
